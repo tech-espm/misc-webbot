@@ -1,4 +1,3 @@
-#!-*- coding: utf8 -*-
 from selenium import webdriver
 import random
 import time
@@ -11,8 +10,8 @@ class Forms:
         self.path = os.path.abspath(os.getcwd() + os.sep + os.pardir + '/dependencies/chromedriver.exe')
         self.driver = webdriver.Chrome(self.path)
 
-        self.f_list = open('/Users/brunopaes/Documents/OneDrive/Acadêmico/ESPM/Misc/05.4 - Python_Playground/Scripts/Scraper/Data/first_names.txt', 'r', encoding='utf-8').read().split(',')
-        self.l_list = open('/Users/brunopaes/Documents/OneDrive/Acadêmico/ESPM/Misc/05.4 - Python_Playground/Scripts/Scraper/Data/last_names.txt', 'r', encoding='utf-8').read().split(',')
+        self.f_list = open(os.path.abspath(os.getcwd() + os.sep + os.pardir + '/data/first_names.txt'), 'r', encoding='utf-8').read().split(',')
+        self.f_list = open(os.path.abspath(os.getcwd() + os.sep + os.pardir + '/data/last_names.txt'), 'r', encoding='utf-8').read().split(',')
 
         self.mail_sulfix = [
             '{}{}@gmail.com',
