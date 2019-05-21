@@ -1,4 +1,4 @@
-## misc-webbot - Personal Assistant
+## WebBot -  Messages replier
 
 Optimized for python 3.6
 
@@ -53,5 +53,7 @@ For running the script on terminal/cmd, access the project directory _(~/src/)_ 
 `python crawler.py`
 
 _obs: you must be inside the scr directory._
+
+#### Usage Steps ####
 
 ----------------
