@@ -1,3 +1,4 @@
+#!-*- coding: utf8 -*-
 from sklearn.naive_bayes import MultinomialNB
 from selenium import webdriver
 from bs4 import BeautifulSoup
@@ -13,7 +14,7 @@ class Message:
 
     """
     def __init__(self):
-        self.path = os.path.abspath(os.getcwd() + os.sep + os.pardir + '/dependencies/chromedriver')
+        self.path = os.path.abspath(os.getcwd() + os.sep + os.pardir + '/dependencies/chromedriver.exe')
         self.options = webdriver.ChromeOptions()
         self.options.add_argument('--user-data-dir=./User_Data')
         self.driver = webdriver.Chrome(self.path, options=self.options)

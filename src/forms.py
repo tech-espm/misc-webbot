@@ -1,3 +1,4 @@
+#!-*- coding: utf8 -*-
 from selenium import webdriver
 import random
 import time
@@ -7,7 +8,7 @@ import os
 class Forms:
     def __init__(self):
         self.url = 'https://forms.gle/5aUdsK1TfkTDwJzg8'
-        self.path = os.path.abspath(os.getcwd() + os.sep + os.pardir + '/dependencies/chromedriver')
+        self.path = os.path.abspath(os.getcwd() + os.sep + os.pardir + '/dependencies/chromedriver.exe')
         self.driver = webdriver.Chrome(self.path)
 
         self.f_list = open('/Users/brunopaes/Documents/OneDrive/Acadêmico/ESPM/Misc/05.4 - Python_Playground/Scripts/Scraper/Data/first_names.txt', 'r', encoding='utf-8').read().split(',')
