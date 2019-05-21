@@ -1,4 +1,4 @@
-## Friday - Personal Assistant
+## misc-webbot - Personal Assistant
 
 Optimized for python 3.6
 
@@ -38,7 +38,7 @@ about specifics issues.
 
 In your python environment, run the following command:
 
-`pip install requests bs4`
+`pip install scikit-learn selenium requests pandas nltk bs4`
 
 or access the root directory _(~/requirements.txt)_ and run the following command:
 
