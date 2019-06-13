@@ -1,4 +1,5 @@
 #!-*- coding: utf8 -*-
+from selenium.webdriver.common.keys import Keys
 from sklearn.naive_bayes import MultinomialNB
 from selenium import webdriver
 from bs4 import BeautifulSoup
@@ -35,7 +36,7 @@ class Message:
 
         """
         try:
-            unread_chat = self.driver.find_element_by_css_selector('.OUeyt')
+            unread_chat = self.driver.find_element_by_class_name('P6z4j')
             unread_chat.click()
 
             time.sleep(5)
@@ -73,7 +74,7 @@ class Message:
 
             input_box = self.driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')
             input_box.send_keys(self.nltk.pred(self.model, msg, self.librarian))
-            input_box.send_keys(webdriver.common.Keys.ENTER)
+            input_box.send_keys(Keys.ENTER)
 
         except Exception as e:
             e.args
